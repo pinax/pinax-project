@@ -133,8 +133,8 @@ INSTALLED_APPS = [
     "account",
     "pinax.eventlog",
     "easy_thumbnails",
-    "kaleo",
-    "teams",
+    "pinax.invitations",
+    "pinax.teams",
     "pinax.wiki",
     "pinax.webanalytics",
 
