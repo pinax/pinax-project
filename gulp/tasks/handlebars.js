@@ -10,12 +10,12 @@ const rename = require('gulp-rename');
 /**
  * Module body / Expose
  */
-module.exports = (manifestPath, scriptSourceTemplate, staticRoot) => {
+module.exports = (manifestPath, scriptSourceTemplate) => {
   const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
   const handlebarOpts = {
             helpers: {
                 assetPath: (path, context) => {
-                    return [staticRoot, context.data.root[path]].join('/');
+                    return context.data.root[path];
                 }
             }
         };

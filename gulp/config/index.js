@@ -7,7 +7,6 @@ const npmRoot = 'node_modules/';
 
 
 exports = module.exports = {
-    staticUrlRoot: '/site_media/static',
     paths: {
         source: staticSource,
         build: staticBuild,

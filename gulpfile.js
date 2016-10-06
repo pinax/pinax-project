@@ -49,12 +49,12 @@ gulp.task('build:copy-images', function() {
 });
 
 gulp.task('build:script-include', function () {
-    return tasks.handlebars(config.templates.manifestPath, config.templates.scriptsTemplate, config.staticUrlRoot)
+    return tasks.handlebars(config.templates.manifestPath, config.templates.scriptsTemplate)
         .pipe(gulp.dest(config.templates.destination));
 });
 
 gulp.task('build:style-include', function () {
-    return tasks.handlebars(config.templates.manifestPath, config.templates.stylesTemplate, config.staticUrlRoot)
+    return tasks.handlebars(config.templates.manifestPath, config.templates.stylesTemplate)
         .pipe(gulp.dest(config.templates.destination));
 });
 
