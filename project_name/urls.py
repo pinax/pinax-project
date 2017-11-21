@@ -12,13 +12,13 @@ urlpatterns = [
     url(r"^$", homepage, name="home"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
-    url(r"^invites/", include("kaleo.urls")),
+    url(r"^invites/", include("pinax.invitations.urls")),
 
     url(r"^profile/edit/", ProfileEditView.as_view(), name="profiles_edit"),
     url(r"^u/$", ProfileListView.as_view(), name="profiles_list"),
 
     url(r"^u/(?P<username>[\w\._-]+)/$", ProfileDetailView.as_view(), name="profiles_detail"),
-    url(r"^t/", include("teams.urls")),
+    url(r"^t/", include("pinax.teams.urls")),
 
     url(r"", include("pinax.wiki.urls"))
 ]
