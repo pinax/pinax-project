@@ -23,6 +23,7 @@ exit
 pipenv shell
 npm install
 ./manage.py migrate
+./manage.py migrate --run-syncdb
 ./manage.py loaddata sites
 ```
 
