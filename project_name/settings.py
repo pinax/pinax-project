@@ -144,6 +144,7 @@ INSTALLED_APPS = [
     "teams",
     "pinax.wiki",
     "pinax.webanalytics",
+    "reversion",
 
     # project
     "{{ project_name }}",
